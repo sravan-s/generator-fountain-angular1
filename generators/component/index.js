@@ -20,5 +20,6 @@ module.exports = fountain.Base.extend({
     this.copyTemplate(`src/app/component.js`, `src/${path}/${name}.js`, props);
     this.copyTemplate(`src/app/component.spec.js`, `src/${path}/${name}.spec.js`, props);
     this.copyTemplate('src/app/component.html', `src/${path}/${name}.html`, props);
+    this.copyTemplate('src/app/component.scss', `src/${path}/` + '_' + `${name}.scss`, props);
   }
 });
